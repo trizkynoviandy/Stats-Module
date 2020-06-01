@@ -52,3 +52,22 @@ def stdev(data):
     var = (sum_n_data_squared-avg_sum_data_squared) / data_size
     stdev = var**(1/2)
     return stdev
+
+def describe(data):
+    print('\n-----Data Description-----\n')
+
+    desc_mean = mean(data)
+    desc_median = median(data)
+    desc_mode = mode(data)
+    desc_var = var(data)
+    desc_stdev = stdev(data)
+
+    print('Min                 :', min(data))
+    print('Max                 :', max(data))
+    print('Mean                :', desc_mean)
+    print('Median              :', desc_median)
+    print('Mode                :', desc_mode)
+    print('Variance            :', desc_var)
+    print('Standar Deviation   :', desc_stdev)
+
+    print('\n---------------------------')
